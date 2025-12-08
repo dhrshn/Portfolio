@@ -6,7 +6,7 @@
     --text-muted: #a0a0a0;
     --accent: #bb86fc; /* Purple accent */
     --accent-hover: #9b65da;
-    --font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-stack:'JetBrainsMono Nerd Font', 'JetBrains Mono', 'Fira Code', Consolas, Monaco, 'Courier New', monospace;
 }
 
 * {
