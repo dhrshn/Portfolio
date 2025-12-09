@@ -288,3 +288,39 @@ footer {
 .read-more:hover {
     text-decoration: underline;
 }
+
+/* --- Mobile Optimization (Add to bottom of style.css) --- */
+@media (max-width: 768px) {
+    /* 1. Fix Navigation for Mobile */
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    /* 2. Adjust Text Sizes */
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    
+    .hero-section {
+        height: auto; /* Allow height to grow if content is long */
+        padding: 4rem 1rem;
+    }
+
+    /* 3. Fix Container Padding */
+    .container {
+        padding: 2rem 1rem;
+    }
+
+    /* 4. Make Form Inputs Full Width */
+    .contact-form {
+        width: 100%;
+    }
+}
