@@ -337,3 +337,30 @@ footer {
         color: var(--accent); /* Turns purple on touch/hover */
     }
 }
+
+/* Ensure the hamburger is visible on mobile */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        z-index: 2000;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Hidden by default */
+        height: 100vh;
+        width: 250px;
+        background-color: #1e1e1e; /* Dark background */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s ease-in-out;
+        z-index: 1500;
+    }
+
+    .nav-links.active {
+        right: 0; /* Slide in when active */
+    }
+}
